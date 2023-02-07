@@ -6,7 +6,7 @@ How to install Wordpress on Openshift
 >oc create ns wordpress
 
 3) Set following policy for the namespace.
->oc adm policy add-scc-to-user anyuid -z default -n wordpress1
+>oc adm policy add-scc-to-user anyuid -z default -n wordpress
 
 4) Apply donwloaded yamls.
 >oc apply -k ./ -n wordpress
